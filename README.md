@@ -15,3 +15,14 @@ Access to the following sensors via a simple subscription-based API:
 - 📏 **Barometer** — Read atmospheric pressure (altitude).
 - 📡 **Proximity Sensor** — Detect nearby objects.
 - 🔋 **Battery Info** — Get battery level and charging status.
+
+
+**Accelerometer**
+```
+  const _slow = () => Accelerometer.setUpdateInterval(1000);
+  const _fast = () => Accelerometer.setUpdateInterval(16);
+
+  const _subscribe = () => {
+    setSubscription(Accelerometer.addListener(setData));
+  };
+```
