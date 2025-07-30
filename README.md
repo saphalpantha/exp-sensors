@@ -16,8 +16,7 @@ Access to the following sensors via a simple subscription-based API:
 - 📡 **Proximity Sensor** — Detect nearby objects.
 - 🔋 **Battery Info** — Get battery level and charging status.
 
-
-**Accelerometer**
+*** Accelerometer ***
 ```
   const _slow = () => Accelerometer.setUpdateInterval(1000);
   const _fast = () => Accelerometer.setUpdateInterval(16);
