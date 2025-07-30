@@ -25,3 +25,14 @@ Access to the following sensors via a simple subscription-based API:
     setSubscription(Accelerometer.addListener(setData));
   };
 ```
+
+
+*** Gyroscope ***
+```
+  const _slow = () => Gyroscope.setUpdateInterval(1000);
+  const _fast = () => Gyroscope.setUpdateInterval(16);
+
+  const _subscribe = () => {
+    setSubscription(Gyroscope.addListener());
+  };
+```
